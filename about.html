@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Waiter</title>
+    
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar Section Starts Here -->
+    
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="home.html" title="Logo">
+                    <img src="images/ww.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="Our Specials.html">Our Specials</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+       </section>
+      <!-- Navbar Section Ends Here -->
+      <div class="content">
+            
+         <p6 style="font-family: 'Beau Rivage', cursive;"> We, the people of "The-Cooking-Kitchen" are serving delicious food as people can feel that Deliciousness jumping into their mouths.</p6><br>
+         <p6 style="font-family: 'Beau Rivage', cursive;">We aim at Customer Satisfaction. For this, we choose fresh meat, veggies, and spices to bring Authentic Flavours.</p6><br>
+            
+            
+            <p6 style="font-family: 'Beau Rivage', cursive;">  Fresh in a flash.</p6><br>
+            <p6 style="font-family: 'Beau Rivage', cursive;"> Just Satisfy your snack attack...</p6><br>
+            <p6 style="font-family: 'Beau Rivage', cursive;"> You are what you eat,so eat right...</p6><br>
+            <p6 style="font-family: 'Beau Rivage', cursive;">   Wake up your tastebuds,have it your way....</p6><br>
+                       
+            
+            
+           <p6 style="font-family: 'Square Peg', cursive;">...................................Food is fuel for your life...Refill your tank with Fresh food and a good mood............................</p6>
+        </div>
+      <div class="button-box">
+          <a href="more.html">Know more about us</a>
+      </div>
+      <br>
+      <br>
+        </div><section>                                                   
+      </div> 
+      <h1 style="text-align:center">Our Restaurant</h1>
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="images/amb1.png" style="width:50%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/ambience1.png" style="width:50%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/ambience2.png" style="width:50%">
+  </div>
+<div class="buton">
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+<div class="buton2">
+
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+</div>
+
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</section>
+<section class="social">
+    <div class="container text-center">
+    
+        <ul>
+            <li>
+                <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- social Section Ends Here -->
+
+<!-- footer Section Starts Here -->
+<section class="footer">
+    <div class="container text-center">
+        <p>All rights reserved. Designed By <a href="#">Akanksha Chiluveri</a></p>
+    </div>
+</section>
+<!-- footer S
